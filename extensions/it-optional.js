@@ -17,6 +17,7 @@ export function testOptional(title, fn, isAsyncTest) {
     });
   } else {
     it(title, function test() {
+      console.log(title)
       try {
         fn.call(this);
       } catch (err) {
